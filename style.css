@@ -1,0 +1,26 @@
+body{
+    background-color: pink;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+#contList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.list{
+    background-color: aquamarine;
+    border: 2px purple solid;
+    width:20vw;
+    height:10vw;
+    /*height:25vw;*/
+    margin: 20px;
+    text-align: center;
+    font-size: 2vw;
+}
+.smol{
+    display:flex;
+    width: 40%;
+    height:auto;
+}
