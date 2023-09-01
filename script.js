@@ -2,14 +2,16 @@ const contList=document.getElementById("contList");
 const current=document.getElementById("current");
 
 const state={pups:[],pupper:null,home:true};
+let first=true;
 
 //This is easily the greatest function I've ever written
 //I don't care what it actually does it sounds great
 async function getPuppies(){
-    if(state.home){
+    if(state.home||first){
     const info=await fetch('https://fsa-puppy-bowl.herokuapp.com/api/2307-ftb-et-web-ft/players/');
     const json=await info.json();
     state.pups=json.data.players;
+    first=false;
     }else{
         state.pups=[];
     }
@@ -51,17 +53,22 @@ async function renderPuppy(){
         const pupData=await data.json();
         state.pupper=pupData.data.player;
         current.innerHTML=`
-        <a href=#home>Want to choose a different pupper? Click here!</a>
-        <h3>This is ${state.pupper.name}</h3>
-        <p>They are a ${state.pupper.breed}</p>
-        <p>Aren't they cute?</p>
+        <div class=theBoy>
+            <h3>This is ${state.pupper.name}</h3>
+            <p class='they'>They are a ${state.pupper.breed}</p>
+            <p class='them'>Aren't they cute?</p>
+        </div>
+        <div class='home'>
+            <a href=#home>Want to choose a different pupper? Click here!</a>
+        </div>
         <img class='smol' src='${state.pupper.imageUrl}'/>`;
+        if(state.pupper.name==='Crumpet'){
+            console.log("This one's my favorite")
+        }
     }else{
         current.innerHTML='';
     }
 }
-
-//May have to put list down here, I hope not, but we'll see
 
 
 async function render(){

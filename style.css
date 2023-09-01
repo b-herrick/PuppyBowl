@@ -5,6 +5,9 @@ h1{
     text-align: center;
     text-decoration: underline;
 }
+h2{
+    background-color: bisque;
+}
 #contList{
     display: flex;
     flex-wrap: wrap;
@@ -19,8 +22,30 @@ h1{
     text-align: center;
     font-size: 2vw;
 }
+h3{
+    font-size: 4vw;
+    background-color: beige;
+}
+.they{
+    font-size: 3vw;
+}
+.them{
+    font-size: 2vw;
+}
+.theBoy{
+    background-color: aquamarine;
+    width:33%;
+}
+.home{
+    width:50%;
+    font-size: 2vw;;
+}
 .smol{
-    display:flex;
+    display: block;
     width: 20%;
     height:auto;
+    margin-left: 63%;
+    margin-right: auto;
+    margin-top: -28vw;
+    border:3px purple solid;
 }
