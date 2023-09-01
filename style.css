@@ -3,33 +3,35 @@ body{
 }
 h1{
     text-align: center;
+    text-decoration:wavy;
     text-decoration: underline;
+    background-color: chartreuse;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 100%;
 }
 h2{
     background-color: bisque;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h3{
+    font-size: 4vw;
+    background-color: beige;
 }
 #contList{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .list{
     background-color: aquamarine;
     border: 2px purple solid;
     width: 18vw;
     height:10vw;
-    /*height:25vw;*/
-    /*margin: 20px;*/
     text-align: center;
     font-size: 2vw;
 }
-h3{
-    font-size: 4vw;
-    background-color: beige;
-}
 .they{
-    font-size: 3vw;
-}
-.them{
+    font-family: 'Courier New', Courier, monospace;
     font-size: 2vw;
 }
 .theBoy{
@@ -46,6 +48,14 @@ h3{
     height:auto;
     margin-left: 63%;
     margin-right: auto;
-    margin-top: -28vw;
+    margin-top: -25vw;
     border:3px purple solid;
+}
+.long{
+    display:flex;
+    margin:20px;
+    width:90vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
 }

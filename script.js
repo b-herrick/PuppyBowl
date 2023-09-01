@@ -56,10 +56,10 @@ async function renderPuppy(){
         <div class=theBoy>
             <h3>This is ${state.pupper.name}</h3>
             <p class='they'>They are a ${state.pupper.breed}</p>
-            <p class='them'>Aren't they cute?</p>
+            <p class='they'>Aren't they cute?</p>
         </div>
         <div class='home'>
-            <a href=#home>Want to choose a different pupper? Click here!</a>
+            <a href=#home>Want to check out a different pupper? Click here!</a>
         </div>
         <img class='smol' src='${state.pupper.imageUrl}'/>`;
         if(state.pupper.name==='Crumpet'){
