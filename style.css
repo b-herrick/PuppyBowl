@@ -12,15 +12,15 @@ h1{
 .list{
     background-color: aquamarine;
     border: 2px purple solid;
-    width:20vw;
+    width: 18vw;
     height:10vw;
     /*height:25vw;*/
-    margin: 20px;
+    /*margin: 20px;*/
     text-align: center;
     font-size: 2vw;
 }
 .smol{
     display:flex;
-    width: 40%;
+    width: 20%;
     height:auto;
 }
